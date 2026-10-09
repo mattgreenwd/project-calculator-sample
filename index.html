@@ -6,37 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Estimate website project costs with a simple interactive calculator."
+      content="A goofy calculator that prices the weird stuff clients ask designers and developers for."
     />
-    <title>Website Project Cost Calculator</title>
+    <title>Client Chaos Cost Calculator</title>
   </head>
   <body>
     <div class="page">
       <header class="site-header">
-        <p class="eyebrow">Project estimate</p>
-        <h1>Super Cool Website Project Cost Calculator</h1>
+        <p class="eyebrow">Freelancer survival tool™</p>
+        <h1>Client Chaos Cost Calculator</h1>
         <p class="lede">
-          Adjust pages, design approach, and add-ons to see a live estimate for
-          your website project.
+          Price out the truly cursed requests — the ones that arrive as
+          “quick question 😊” at 11:47pm.
         </p>
       </header>
 
       <main class="calculator" aria-labelledby="calculator-heading">
         <h2 id="calculator-heading" class="visually-hidden">
-          Cost calculator controls and estimate
+          Chaos calculator controls and estimate
         </h2>
 
-        <section class="panel controls" aria-label="Project options">
+        <section class="panel controls" aria-label="Client chaos options">
           <fieldset class="field-group">
-            <legend>Number of pages</legend>
+            <legend>“Just one tiny tweak…” rounds</legend>
             <div class="pages-row">
               <label for="pages" class="pages-label">
                 <span class="pages-count" id="pages-display" aria-live="polite"
                   >5</span
                 >
-                <span class="pages-unit">pages</span>
+                <span class="pages-unit">rounds</span>
               </label>
-              <p class="hint">$250 per page</p>
+              <p class="hint">$275 per round of “tiny” feedback</p>
             </div>
             <input
               type="range"
@@ -52,14 +52,14 @@
               aria-describedby="pages-hint"
             />
             <div class="range-ends" id="pages-hint" aria-hidden="true">
-              <span>1</span>
-              <span>20</span>
+              <span>1 (optimistic)</span>
+              <span>20 (send help)</span>
             </div>
           </fieldset>
 
           <fieldset class="field-group">
-            <legend>Design approach</legend>
-            <div class="option-grid" role="radiogroup" aria-label="Design approach">
+            <legend>Brand “inspiration” level</legend>
+            <div class="option-grid" role="radiogroup" aria-label="Brand inspiration level">
               <label class="option-card">
                 <input
                   type="radio"
@@ -68,47 +68,47 @@
                   checked
                 />
                 <span class="option-card__body">
-                  <span class="option-card__title">Template-based</span>
+                  <span class="option-card__title">“Make it pop”</span>
                   <span class="option-card__desc"
-                    >Start from a proven layout and adapt it to your brand.</span
+                    >Vague vibes only. No examples. Just… pop.</span
                   >
-                  <span class="option-card__price">$500</span>
+                  <span class="option-card__price">$650</span>
                 </span>
               </label>
               <label class="option-card">
                 <input type="radio" name="design" value="custom" />
                 <span class="option-card__body">
-                  <span class="option-card__title">Custom design</span>
+                  <span class="option-card__title">“Like Apple, but cheaper”</span>
                   <span class="option-card__desc"
-                    >A unique visual design built around your brand and goals.</span
+                    >Minimal, premium, world-class… budget of a sandwich.</span
                   >
-                  <span class="option-card__price">$1,500</span>
+                  <span class="option-card__price">$1,800</span>
                 </span>
               </label>
             </div>
           </fieldset>
 
           <fieldset class="field-group">
-            <legend>Additional services</legend>
+            <legend>Bonus client classics</legend>
             <div class="toggle-list">
               <label class="toggle">
-                <input type="checkbox" id="seo" name="seo" />
+                <input type="checkbox" id="logo-bigger" name="logoBigger" />
                 <span class="toggle__ui" aria-hidden="true"></span>
                 <span class="toggle__copy">
-                  <span class="toggle__title">SEO setup</span>
+                  <span class="toggle__title">Make the logo bigger</span>
                   <span class="toggle__desc"
-                    >On-page basics, meta tags, and sitemap configuration.</span
+                    >Then bigger. Then somehow both bigger and smaller.</span
                   >
                 </span>
-                <span class="toggle__price">+$500</span>
+                <span class="toggle__price">+$420</span>
               </label>
               <label class="toggle">
-                <input type="checkbox" id="cms" name="cms" />
+                <input type="checkbox" id="match-pdf" name="matchPdf" />
                 <span class="toggle__ui" aria-hidden="true"></span>
                 <span class="toggle__copy">
-                  <span class="toggle__title">CMS integration</span>
+                  <span class="toggle__title">“Can you make it look like this PDF?”</span>
                   <span class="toggle__desc"
-                    >Editable content structure for pages, posts, or collections.</span
+                    >Scanned brochure. Comic Sans. Printed in 2009. Good luck.</span
                   >
                 </span>
                 <span class="toggle__price">+$750</span>
@@ -118,30 +118,34 @@
         </section>
 
         <aside class="panel estimate" aria-live="polite" aria-atomic="true">
-          <p class="estimate__label">Estimated total</p>
-          <p class="estimate__total" id="total">$1,750</p>
+          <p class="estimate__label">Emotional damage invoice</p>
+          <p class="estimate__total" id="total">$2,025</p>
+          <p class="estimate__mood" id="mood">Mildly cursed. Surviveable.</p>
 
-          <h3 class="estimate__heading">Cost breakdown</h3>
+          <h3 class="estimate__heading">Chaos breakdown</h3>
           <ul class="breakdown" id="breakdown">
             <li>
-              <span>Pages (5 × $250)</span>
-              <span>$1,250</span>
+              <span>Tiny tweak rounds (5 × $275)</span>
+              <span>$1,375</span>
             </li>
             <li>
-              <span>Template-based design</span>
-              <span>$500</span>
+              <span>“Make it pop”</span>
+              <span>$650</span>
             </li>
           </ul>
 
           <p class="disclaimer">
-            Prices are illustrative for demonstration purposes only and do not
-            represent a formal quote.
+            Prices are fake, feelings are real. For demonstration / coping only —
+            not a formal quote (unless your client actually said these things).
           </p>
         </aside>
       </main>
 
       <footer class="site-footer">
-        <p>Built with Vite for a Webflow Cloud deployment tutorial.</p>
+        <p>
+          Built with Vite for a Webflow Cloud tutorial. Inspired by every Slack
+          ping that starts with “super quick ask.”
+        </p>
       </footer>
     </div>
 

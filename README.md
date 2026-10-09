@@ -1,13 +1,13 @@
-# Website Project Cost Calculator
+# Client Chaos Cost Calculator
 
-A lightweight Vite + vanilla JavaScript demo that estimates website project costs. Built for a tutorial on deploying a static web app to Webflow Cloud.
+A lightweight Vite + vanilla JavaScript demo that jokingly prices the weird requests clients send designers and developers. Built for a tutorial on deploying a static web app to Webflow Cloud.
 
 ## Features
 
-- Page count slider (1–20) at $250 per page
-- Template ($500) or custom ($1,500) design selection
-- Optional SEO setup (+$500) and CMS integration (+$750)
-- Live total with a cost breakdown
+- “Tiny tweak” rounds slider (1–20) at $275 per round
+- Brand vibes: “Make it pop” ($650) or “Like Apple, but cheaper” ($1,800)
+- Optional classics: make the logo bigger (+$420), match this cursed PDF (+$750)
+- Live total, mood line, and chaos breakdown
 - Responsive two-column layout (stacks on mobile)
 
 ## Requirements
