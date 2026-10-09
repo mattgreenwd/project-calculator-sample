@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estimate website project costs with a simple interactive calculator."
+    />
+    <title>Website Project Cost Calculator</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <p class="eyebrow">Project estimate</p>
+        <h1>Website Project Cost Calculator</h1>
+        <p class="lede">
+          Adjust pages, design approach, and add-ons to see a live estimate for
+          your website project.
+        </p>
+      </header>
+
+      <main class="calculator" aria-labelledby="calculator-heading">
+        <h2 id="calculator-heading" class="visually-hidden">
+          Cost calculator controls and estimate
+        </h2>
+
+        <section class="panel controls" aria-label="Project options">
+          <fieldset class="field-group">
+            <legend>Number of pages</legend>
+            <div class="pages-row">
+              <label for="pages" class="pages-label">
+                <span class="pages-count" id="pages-display" aria-live="polite"
+                  >5</span
+                >
+                <span class="pages-unit">pages</span>
+              </label>
+              <p class="hint">$250 per page</p>
+            </div>
+            <input
+              type="range"
+              id="pages"
+              name="pages"
+              min="1"
+              max="20"
+              value="5"
+              step="1"
+              aria-valuemin="1"
+              aria-valuemax="20"
+              aria-valuenow="5"
+              aria-describedby="pages-hint"
+            />
+            <div class="range-ends" id="pages-hint" aria-hidden="true">
+              <span>1</span>
+              <span>20</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>Design approach</legend>
+            <div class="option-grid" role="radiogroup" aria-label="Design approach">
+              <label class="option-card">
+                <input
+                  type="radio"
+                  name="design"
+                  value="template"
+                  checked
+                />
+                <span class="option-card__body">
+                  <span class="option-card__title">Template-based</span>
+                  <span class="option-card__desc"
+                    >Start from a proven layout and adapt it to your brand.</span
+                  >
+                  <span class="option-card__price">$500</span>
+                </span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="design" value="custom" />
+                <span class="option-card__body">
+                  <span class="option-card__title">Custom design</span>
+                  <span class="option-card__desc"
+                    >A unique visual design built around your brand and goals.</span
+                  >
+                  <span class="option-card__price">$1,500</span>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>Additional services</legend>
+            <div class="toggle-list">
+              <label class="toggle">
+                <input type="checkbox" id="seo" name="seo" />
+                <span class="toggle__ui" aria-hidden="true"></span>
+                <span class="toggle__copy">
+                  <span class="toggle__title">SEO setup</span>
+                  <span class="toggle__desc"
+                    >On-page basics, meta tags, and sitemap configuration.</span
+                  >
+                </span>
+                <span class="toggle__price">+$500</span>
+              </label>
+              <label class="toggle">
+                <input type="checkbox" id="cms" name="cms" />
+                <span class="toggle__ui" aria-hidden="true"></span>
+                <span class="toggle__copy">
+                  <span class="toggle__title">CMS integration</span>
+                  <span class="toggle__desc"
+                    >Editable content structure for pages, posts, or collections.</span
+                  >
+                </span>
+                <span class="toggle__price">+$750</span>
+              </label>
+            </div>
+          </fieldset>
+        </section>
+
+        <aside class="panel estimate" aria-live="polite" aria-atomic="true">
+          <p class="estimate__label">Estimated total</p>
+          <p class="estimate__total" id="total">$1,750</p>
+
+          <h3 class="estimate__heading">Cost breakdown</h3>
+          <ul class="breakdown" id="breakdown">
+            <li>
+              <span>Pages (5 × $250)</span>
+              <span>$1,250</span>
+            </li>
+            <li>
+              <span>Template-based design</span>
+              <span>$500</span>
+            </li>
+          </ul>
+
+          <p class="disclaimer">
+            Prices are illustrative for demonstration purposes only and do not
+            represent a formal quote.
+          </p>
+        </aside>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built with Vite for a Webflow Cloud deployment tutorial.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
